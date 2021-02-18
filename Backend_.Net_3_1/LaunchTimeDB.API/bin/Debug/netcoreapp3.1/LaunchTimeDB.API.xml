@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LaunchTimeDB.API</name>
+    </assembly>
+    <members>
+        <member name="T:LaunchTimeDB.API.Controllers.Base.MainController">
+            <summary>
+            Controller base for each API.
+            </summary>
+        </member>
+        <member name="M:LaunchTimeDB.API.Controllers.Base.MainController.ResponseOk``1(``0)">
+            <summary>
+            Use for 2xx (Ok) responses.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LaunchTimeDB.API.Controllers.Base.MainController.ResponseWithError``1(Microsoft.Extensions.Logging.ILogger{``0},System.Exception)">
+            <summary>
+            User for BadRequest.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="logger"></param>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LaunchTimeDB.API.Startup.AppSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Activating Swagger middlewares.
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

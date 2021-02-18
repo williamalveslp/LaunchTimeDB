@@ -1,0 +1,9 @@
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.deps.json
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.dll
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.pdb
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.csprojAssemblyReference.cache
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.AssemblyInfoInputs.cache
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.AssemblyInfo.cs
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.csproj.CoreCompileInputs.cache
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.dll
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.pdb

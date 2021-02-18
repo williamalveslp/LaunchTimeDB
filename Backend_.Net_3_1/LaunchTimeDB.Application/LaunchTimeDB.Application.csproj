@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Responses\Users\" />
+    <Folder Include="Responses\Restaurants\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LaunchTimeDB.Domain\LaunchTimeDB.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

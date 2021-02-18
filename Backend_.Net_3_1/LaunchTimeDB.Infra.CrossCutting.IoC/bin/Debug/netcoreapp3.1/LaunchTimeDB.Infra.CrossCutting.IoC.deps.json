@@ -1,0 +1,94 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LaunchTimeDB.Infra.CrossCutting.IoC/1.0.0": {
+        "dependencies": {
+          "LaunchTimeDB.Application": "1.0.0",
+          "LaunchTimeDB.DataStore.FakeData": "1.0.0",
+          "LaunchTimeDB.Domain": "1.0.0",
+          "LaunchTimeDB.Domain.Services": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "LaunchTimeDB.Infra.CrossCutting.IoC.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "LaunchTimeDB.Application/1.0.0": {
+        "dependencies": {
+          "LaunchTimeDB.Domain": "1.0.0"
+        },
+        "runtime": {
+          "LaunchTimeDB.Application.dll": {}
+        }
+      },
+      "LaunchTimeDB.DataStore.FakeData/1.0.0": {
+        "dependencies": {
+          "LaunchTimeDB.Domain": "1.0.0"
+        },
+        "runtime": {
+          "LaunchTimeDB.DataStore.FakeData.dll": {}
+        }
+      },
+      "LaunchTimeDB.Domain/1.0.0": {
+        "runtime": {
+          "LaunchTimeDB.Domain.dll": {}
+        }
+      },
+      "LaunchTimeDB.Domain.Services/1.0.0": {
+        "dependencies": {
+          "LaunchTimeDB.Domain": "1.0.0"
+        },
+        "runtime": {
+          "LaunchTimeDB.Domain.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LaunchTimeDB.Infra.CrossCutting.IoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    },
+    "LaunchTimeDB.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LaunchTimeDB.DataStore.FakeData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LaunchTimeDB.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LaunchTimeDB.Domain.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

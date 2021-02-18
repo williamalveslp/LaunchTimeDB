@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BMzCmQeV7dg01zjlyzkRq7haco1gJ04ni/Ah0z15qjEP+FCM8s8/b9WYHukn6rQNKeN+K2jwLVX73mlnwTr5gg==",
+  "success": true,
+  "projectFilePath": "C:\\Git_Repos\\LaunchTimeDB\\Backend_.Net_3_1\\LaunchTimeDB.Infra.CrossCutting.IoC\\LaunchTimeDB.Infra.CrossCutting.IoC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

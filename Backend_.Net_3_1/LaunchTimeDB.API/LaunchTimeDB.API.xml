@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LaunchTimeDB.API</name>
+    </assembly>
+    <members>
+        <member name="M:LaunchTimeDB.API.Startup.AppSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Activating Swagger middlewares.
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

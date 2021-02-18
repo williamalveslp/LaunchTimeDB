@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "QJ15NY+8JdcgwpkCrnq1gh3mHUh+4LxHF9f5MmlIiC5G1RGJemKIZr99fgl9obdl4dbLR/MUxkti4jhf7/CvSw==",
+  "success": true,
+  "projectFilePath": "C:\\Git_Repos\\LaunchTimeDB\\Backend_.Net_3_1\\LaunchTimeDB.Infra.CrossCutting\\LaunchTimeDB.Infra.CrossCutting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.0.7\\swashbuckle.aspnetcore.6.0.7.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.0.7\\swashbuckle.aspnetcore.swagger.6.0.7.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.0.7\\swashbuckle.aspnetcore.swaggergen.6.0.7.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.0.7\\swashbuckle.aspnetcore.swaggerui.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

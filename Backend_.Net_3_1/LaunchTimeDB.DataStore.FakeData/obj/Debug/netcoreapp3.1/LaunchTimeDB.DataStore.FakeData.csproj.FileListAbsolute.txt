@@ -1,0 +1,12 @@
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.deps.json
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.dll
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.pdb
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.dll
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.pdb
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.csprojAssemblyReference.cache
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.AssemblyInfoInputs.cache
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.AssemblyInfo.cs
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.csproj.CoreCompileInputs.cache
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.csproj.CopyComplete
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.dll
+C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.pdb
