@@ -2,7 +2,7 @@
 
 namespace LaunchTimeDB.Domain.Entities.Base
 {
-    public class Auditory
+    public abstract class Auditory
     {
         public virtual DateTime CreatedDate { get; set; }
 

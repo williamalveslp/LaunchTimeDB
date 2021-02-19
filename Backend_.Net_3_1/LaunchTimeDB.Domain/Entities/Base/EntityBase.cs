@@ -1,7 +1,12 @@
 ﻿namespace LaunchTimeDB.Domain.Entities.Base
 {
-    public class EntityBase : Auditory
+    public abstract class EntityBase : Auditory
     {
         public virtual long Id { get; set; }
+
+        public void SetIdFake(long id)
+        {
+            this.Id = id;
+        }
     }
 }

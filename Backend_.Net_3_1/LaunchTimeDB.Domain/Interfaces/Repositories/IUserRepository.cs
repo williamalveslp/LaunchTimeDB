@@ -5,5 +5,6 @@ namespace LaunchTimeDB.Domain.Interfaces.Repositories
 {
     public interface IUserRepository : IRepositoryBase<User>
     {
+        User GetLogin(string userName, string password);
     }
 }

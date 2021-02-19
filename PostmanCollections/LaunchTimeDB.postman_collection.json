@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "5edb4c62-8817-432f-9abf-389daa4263e0",
+		"name": "LaunchTimeDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Insert User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"williamgoi\",\r\n  \"password\": \"w@12399Z$!\",\r\n  \"name\": \"William Goi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/User/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"User",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"williamgoi\",\r\n  \"password\": \"w@12399Z$!\",\r\n  \"name\": \"William Goi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/User/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"User",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List all Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{environment}}/api/User/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"User",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{environment}}/api/User/1",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"User",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{environment}}/api/User/7",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"User",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn / Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"joaopedro\",\r\n  \"password\": \"j!ao\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/User/SignIn",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"User",
+								"SignIn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facilitators",
+			"item": [
+				{
+					"name": "Insert Facilitator",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"restaurantId\": 2,\r\n  \"launchDate\": \"2021-02-19T03:11:03.706Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/Facilitator/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Facilitator",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Facilitator",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,  \r\n  \"restaurantId\": 3,\r\n  \"launchDate\": \"2021-02-19T03:11:03.706Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/Facilitator/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Facilitator",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Facilitators",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{environment}}/api/Facilitator/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Facilitator",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Facilitator by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{environment}}/api/Facilitator/1",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Facilitator",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Facilitator by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{environment}}/api/Facilitator/1",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Facilitator",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Restaurants",
+			"item": [
+				{
+					"name": "Insert Restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Novo Restaurant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/Restaurant/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Restaurant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 10,\r\n  \"name\": \"NOME ATUALIZADO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/Restaurant/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Restaurant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{environment}}/api/Restaurant/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Restaurant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Restaurant by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{environment}}/api/Restaurant/2",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Restaurant",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Restaurant by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Novo Restaurant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{environment}}/api/Restaurant/2",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"api",
+								"Restaurant",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

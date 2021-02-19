@@ -1,17 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using LaunchTimeDB.API.ServicesCollections;
 using LaunchTimeDB.Infra.CrossCutting;
 using LaunchTimeDB.Infra.CrossCutting.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace LaunchTimeDB.API
 {
@@ -37,7 +31,7 @@ namespace LaunchTimeDB.API
             services.AddDependencyInjections();
 
             // Swagger Documentations.
-            services.ConfigureSwagger(Configuration);
+            services.AddSwagger(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

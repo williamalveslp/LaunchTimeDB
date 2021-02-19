@@ -1,8 +1,10 @@
 ﻿using LaunchTimeDB.Application.AppInterfaces;
 using LaunchTimeDB.Application.InputModels.Users;
 using LaunchTimeDB.Application.ViewModels.Users;
+using LaunchTimeDB.Domain.Entities;
 using LaunchTimeDB.Domain.Interfaces.Services;
 using System;
+using System.Collections.Generic;
 
 namespace LaunchTimeDB.Application.AppServices
 {
@@ -15,29 +17,74 @@ namespace LaunchTimeDB.Application.AppServices
             this._userService = userService;
         }
 
-        public UserDetailViewModel Insert(UserInputModel inputModel)
+        public UserSimpleDetailViewModel Insert(UserInputModel inputModel)
         {
-            throw new NotImplementedException();
+            var user = new User(inputModel.UserName, inputModel.Password, inputModel.Name);
+            user = _userService.Insert(user);
+            return GetSimpleDetailViewModel(user);
         }
 
-        public UserDetailViewModel Update(UserInputModel inputModel)
+        public UserSimpleDetailViewModel Update(UserInputModel inputModel)
         {
-            throw new NotImplementedException();
+            if (!inputModel.Id.HasValue)
+                throw new Exception("Id não enviado.");
+
+            var user = _userService.GetById((long)inputModel.Id);
+            if (user == null) return null;
+
+            user.Update(inputModel.UserName, inputModel.Password, inputModel.Name);
+            user = _userService.Update(user);
+
+            return GetSimpleDetailViewModel(user);
         }
 
-        public UserDetailViewModel GetById(int id)
+        public UserSimpleDetailViewModel GetById(long id)
         {
-            throw new NotImplementedException();
+            var user = _userService.GetById(id);
+            return GetSimpleDetailViewModel(user);
         }
 
-        public UserDetailViewModel GetLogin(string userName, string password)
+        public UserSimpleDetailViewModel GetLogin(string userName, string password)
         {
-            throw new NotImplementedException();
+            var user = _userService.GetLogin(userName, password);
+            if (user == null)
+                return null;
+
+            return GetSimpleDetailViewModel(user);
         }
 
-        public void Delete(int id)
+        public UserListViewModel GetAll()
         {
-            throw new NotImplementedException();
+            var allUsers = _userService.GetAll();
+            return GetListViewModel(allUsers);
         }
+
+        public void Delete(long id)
+        {
+            _userService.DeleteById(id);
+        }
+
+        #region .: PRIVATE METHODS :.
+        private UserSimpleDetailViewModel GetSimpleDetailViewModel(User user)
+        {
+            var simpleDetailViewModel = new UserSimpleDetailViewModel();
+            simpleDetailViewModel.Load(user.Id, user.UserName, user.Name, user.CreatedDate, user.UpdatedDate);
+            return simpleDetailViewModel;
+        }
+
+        private UserListViewModel GetListViewModel(IList<User> users)
+        {
+            var listViewModel = new UserListViewModel();
+
+            IList<UserSimpleDetailViewModel> userSimple = new List<UserSimpleDetailViewModel>();
+            foreach (var item in users)
+            {
+                var userSimpleDetailViewModel = GetSimpleDetailViewModel(item);
+                userSimple.Add(userSimpleDetailViewModel);
+            }
+            listViewModel.Load(userSimple);
+            return listViewModel;
+        }
+        #endregion
     }
 }

@@ -19,7 +19,15 @@ namespace LaunchTimeDB.API.Controllers.Base
         /// <returns></returns>
         protected IActionResult ResponseOk<T>(T entity)
         {
-            return Ok(new ResponseData<T>(entity));
+            // TODO: Remove this try catch and replace to Notification Pattern.
+            try
+            {
+                return Ok(new ResponseData<T>(entity));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ErrorResponse(ex.Message, HttpStatusCode.BadRequest));
+            }
         }
 
         /// <summary>

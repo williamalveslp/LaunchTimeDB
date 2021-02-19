@@ -5,5 +5,8 @@ namespace LaunchTimeDB.Domain.Interfaces.Services
 {
     public interface IRestaurantService : IServiceBase<Restaurant>
     {
+        bool IsValid(long id, string name, bool isNew);
+
+        long GetNextId();
     }
 }

@@ -10,3 +10,15 @@ C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataSt
 C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.csproj.CopyComplete
 C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.dll
 C:\Users\willi\Desktop\PROJETO\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.pdb
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.deps.json
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.dll
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.pdb
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.dll
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.pdb
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.AssemblyInfoInputs.cache
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.AssemblyInfo.cs
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.csproj.CoreCompileInputs.cache
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.csproj.CopyComplete
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.dll
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.pdb
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.DataStore.FakeData\obj\Debug\netcoreapp3.1\LaunchTimeDB.DataStore.FakeData.csprojAssemblyReference.cache

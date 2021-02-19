@@ -1,21 +1,20 @@
 ﻿using LaunchTimeDB.Application.InputModels.Users;
 using LaunchTimeDB.Application.ViewModels.Users;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LaunchTimeDB.Application.AppInterfaces
 {
     public interface IUserAppService
     {
-        UserDetailViewModel GetById(int id);
+        UserSimpleDetailViewModel GetById(long id);
 
-        UserDetailViewModel GetLogin(string userName, string password);
+        UserSimpleDetailViewModel GetLogin(string userName, string password);
 
-        UserDetailViewModel Insert(UserInputModel inputModel);
+        UserSimpleDetailViewModel Insert(UserInputModel inputModel);
 
-        UserDetailViewModel Update(UserInputModel inputModel);
+        UserSimpleDetailViewModel Update(UserInputModel inputModel);
 
-        void Delete(int id);
+        UserListViewModel GetAll();
+
+        void Delete(long id);
     }
 }

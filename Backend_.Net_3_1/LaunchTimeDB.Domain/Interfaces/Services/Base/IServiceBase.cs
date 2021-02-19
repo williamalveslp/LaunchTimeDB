@@ -23,7 +23,7 @@ namespace LaunchTimeDB.Domain.Interfaces.Services.Base
         /// </summary>
         /// <param name="entityId"></param>
         /// <returns></returns>
-        T GetById(int entityId);
+        T GetById(long entityId);
 
         /// <summary>
         /// Get all register.
@@ -35,6 +35,6 @@ namespace LaunchTimeDB.Domain.Interfaces.Services.Base
         /// Delete the register by Id.
         /// </summary>
         /// <param name="entityId"></param>
-        void DeleteById(int entityId);
+        void DeleteById(long entityId);
     }
 }

@@ -13,27 +13,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{7D2DF29F-63BC-4917-9E97-36332A323B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.API", "LaunchTimeDB.API\LaunchTimeDB.API.csproj", "{003010BA-E232-464E-8232-39B98BEECEF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.API", "LaunchTimeDB.API\LaunchTimeDB.API.csproj", "{003010BA-E232-464E-8232-39B98BEECEF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.Application", "LaunchTimeDB.Application\LaunchTimeDB.Application.csproj", "{23A7B31A-CAB6-4E53-A3F4-BF089C78D453}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.Application", "LaunchTimeDB.Application\LaunchTimeDB.Application.csproj", "{23A7B31A-CAB6-4E53-A3F4-BF089C78D453}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.Domain", "LaunchTimeDB.Domain\LaunchTimeDB.Domain.csproj", "{D01979F9-6ED2-40B4-A2D4-B28E761D8875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.Domain", "LaunchTimeDB.Domain\LaunchTimeDB.Domain.csproj", "{D01979F9-6ED2-40B4-A2D4-B28E761D8875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.Domain.Services", "LaunchTimeDB.Domain.Services\LaunchTimeDB.Domain.Services.csproj", "{0E94C85C-85DC-4F02-822C-9ED002158787}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.Domain.Services", "LaunchTimeDB.Domain.Services\LaunchTimeDB.Domain.Services.csproj", "{0E94C85C-85DC-4F02-822C-9ED002158787}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - CrossCutting", "4.1 - CrossCutting", "{D5961809-6B5A-401E-810F-35C76E5715A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - DataStore", "4.2 - DataStore", "{2FD0AA55-147D-41D8-A0CB-DC5C156C647A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.xUnit.Tests", "LaunchTimeDB.xUnit.Tests\LaunchTimeDB.xUnit.Tests.csproj", "{35F46A03-A5DF-4B06-9540-FDDF7C114BF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.xUnit.Tests", "LaunchTimeDB.xUnit.Tests\LaunchTimeDB.xUnit.Tests.csproj", "{35F46A03-A5DF-4B06-9540-FDDF7C114BF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.Specflow.Tests", "LaunchTimeDB.Specflow.Tests\LaunchTimeDB.Specflow.Tests.csproj", "{CEAA2218-982F-42E2-B3FE-DC1D359C26AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.Infra.CrossCutting", "LaunchTimeDB.Infra.CrossCutting\LaunchTimeDB.Infra.CrossCutting.csproj", "{50990909-7E2C-4819-88AD-809024C91069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.Infra.CrossCutting", "LaunchTimeDB.Infra.CrossCutting\LaunchTimeDB.Infra.CrossCutting.csproj", "{50990909-7E2C-4819-88AD-809024C91069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.Infra.CrossCutting.IoC", "LaunchTimeDB.Infra.CrossCutting.IoC\LaunchTimeDB.Infra.CrossCutting.IoC.csproj", "{A4921528-88A1-4AF6-9209-E220A76E9D22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.Infra.CrossCutting.IoC", "LaunchTimeDB.Infra.CrossCutting.IoC\LaunchTimeDB.Infra.CrossCutting.IoC.csproj", "{A4921528-88A1-4AF6-9209-E220A76E9D22}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchTimeDB.DataStore.FakeData", "LaunchTimeDB.DataStore.FakeData\LaunchTimeDB.DataStore.FakeData.csproj", "{66D7C2EA-9CED-47F8-88C7-EA878A6FD8FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchTimeDB.DataStore.FakeData", "LaunchTimeDB.DataStore.FakeData\LaunchTimeDB.DataStore.FakeData.csproj", "{66D7C2EA-9CED-47F8-88C7-EA878A6FD8FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,10 +59,6 @@ Global
 		{35F46A03-A5DF-4B06-9540-FDDF7C114BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F46A03-A5DF-4B06-9540-FDDF7C114BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35F46A03-A5DF-4B06-9540-FDDF7C114BF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEAA2218-982F-42E2-B3FE-DC1D359C26AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEAA2218-982F-42E2-B3FE-DC1D359C26AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEAA2218-982F-42E2-B3FE-DC1D359C26AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEAA2218-982F-42E2-B3FE-DC1D359C26AC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50990909-7E2C-4819-88AD-809024C91069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50990909-7E2C-4819-88AD-809024C91069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50990909-7E2C-4819-88AD-809024C91069}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -89,7 +83,6 @@ Global
 		{D5961809-6B5A-401E-810F-35C76E5715A0} = {9F7332E3-AC56-40E2-A622-26CB36979328}
 		{2FD0AA55-147D-41D8-A0CB-DC5C156C647A} = {9F7332E3-AC56-40E2-A622-26CB36979328}
 		{35F46A03-A5DF-4B06-9540-FDDF7C114BF1} = {7D2DF29F-63BC-4917-9E97-36332A323B05}
-		{CEAA2218-982F-42E2-B3FE-DC1D359C26AC} = {7D2DF29F-63BC-4917-9E97-36332A323B05}
 		{50990909-7E2C-4819-88AD-809024C91069} = {D5961809-6B5A-401E-810F-35C76E5715A0}
 		{A4921528-88A1-4AF6-9209-E220A76E9D22} = {D5961809-6B5A-401E-810F-35C76E5715A0}
 		{66D7C2EA-9CED-47F8-88C7-EA878A6FD8FF} = {2FD0AA55-147D-41D8-A0CB-DC5C156C647A}

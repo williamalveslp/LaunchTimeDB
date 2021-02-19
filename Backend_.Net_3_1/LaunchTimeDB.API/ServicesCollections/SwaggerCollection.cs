@@ -10,7 +10,7 @@ namespace LaunchTimeDB.API.ServicesCollections
 {
     internal static class SwaggerCollection
     {
-        public static void ConfigureSwagger(this IServiceCollection services, IConfiguration configuration)
+        public static void AddSwagger(this IServiceCollection services, IConfiguration configuration)
         {
             var swaggerData = ConfigurationTransfer.GetObject<SwaggerSettings>(configuration);
 

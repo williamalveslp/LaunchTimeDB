@@ -1,7 +1,9 @@
 ﻿using LaunchTimeDB.Domain.Entities;
 using LaunchTimeDB.Domain.Interfaces.Repositories;
 using LaunchTimeDB.Domain.Interfaces.Services;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LaunchTimeDB.Domain.Services.Services
 {
@@ -16,6 +18,7 @@ namespace LaunchTimeDB.Domain.Services.Services
 
         public Facilitator Insert(Facilitator entity)
         {
+            entity.SetIdFake(GetNextId());
             return _facilitatorRepository.Insert(entity);
         }
 
@@ -29,14 +32,29 @@ namespace LaunchTimeDB.Domain.Services.Services
             return _facilitatorRepository.GetAll();
         }
 
-        public Facilitator GetById(int entityId)
+        public Facilitator GetById(long entityId)
         {
             return _facilitatorRepository.GetById(entityId);
         }
 
-        public void DeleteById(int entityId)
+        public void DeleteById(long entityId)
         {
             _facilitatorRepository.DeleteById(entityId);
+        }
+
+        public bool IsValidToCreate(long id, long restaurantId, DateTime launchDate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsValid(long id, long restaurantId, DateTime launchDate, bool isNew)
+        {
+            throw new NotImplementedException();
+        }
+
+        public long GetNextId()
+        {
+            return _facilitatorRepository.GetAll().Max(f => f.Id) + 1;
         }
     }
 }

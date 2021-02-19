@@ -8,12 +8,10 @@ namespace LaunchTimeDB.Domain.Interfaces.Repositories.Base
 
         T Update(T entity);
 
-        T GetById(int entityId);
+        T GetById(long entityId);
 
         IList<T> GetAll();
 
-        void DeleteById(int entityId);
-
-        void Dispose();
+        void DeleteById(long entityId);
     }
 }

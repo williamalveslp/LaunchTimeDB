@@ -11,5 +11,18 @@ namespace LaunchTimeDB.Domain.Entities
             this.Name = name;
             AuditionCreate();
         }
+
+        public Restaurant(long id, string name)
+        {
+            this.Id = id;
+            this.Name = name;
+            AuditionCreate();
+        }
+
+        public void Update(string name)
+        {
+            this.Name = name;
+            AuditionUpdate();
+        }
     }
 }
