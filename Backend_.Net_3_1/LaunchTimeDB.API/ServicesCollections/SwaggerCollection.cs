@@ -33,7 +33,7 @@ namespace LaunchTimeDB.API.ServicesCollections
                 // Set the comments path for the Swagger JSON and UI (Properties > Build > set 'XML documentation file').
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //c.IncludeXmlComments(xmlPath);
+                c.IncludeXmlComments(xmlPath);
             });
         }
     }

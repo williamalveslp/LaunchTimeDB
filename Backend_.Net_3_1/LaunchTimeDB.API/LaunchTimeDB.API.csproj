@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\LaunchTimeDB.API.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

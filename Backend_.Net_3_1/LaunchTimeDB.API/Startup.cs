@@ -22,10 +22,10 @@ namespace LaunchTimeDB.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers()
-                 .AddJsonOptions(options =>
-                 {
-                     options.JsonSerializerOptions.WriteIndented = true;
-                 });
+                 .AddJsonOptions(options => options.JsonSerializerOptions.WriteIndented = true);
+
+            // Cors.
+            services.AddCorsSettings(Configuration);
 
             // Dependency Injections.
             services.AddDependencyInjections();
@@ -42,6 +42,8 @@ namespace LaunchTimeDB.API
                 app.UseDeveloperExceptionPage();
             }
             app.UseRouting();
+
+            AppCors(app);
 
             // Are you allowed?  
             app.UseAuthorization();
@@ -63,6 +65,16 @@ namespace LaunchTimeDB.API
             var swaggerData = ConfigurationTransfer.GetObject<SwaggerSettings>(Configuration);
             app.UseSwagger();
             app.UseSwaggerUI(op => op.SwaggerEndpoint($"/swagger/{swaggerData?.Version}/swagger.json", swaggerData?.Title));
+        }
+
+        /// <summary>
+        /// Activing Cors middlewares.
+        /// </summary>
+        /// <param name="app"></param>
+        private void AppCors(IApplicationBuilder app)
+        {
+            var corsData = ConfigurationTransfer.GetObject<CorsSettings>(Configuration);
+            app.UseCors(corsData.Key);
         }
     }
 }
