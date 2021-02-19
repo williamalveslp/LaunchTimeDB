@@ -79,7 +79,12 @@ namespace LaunchTimeDB.Domain.Services.Services
 
         public long GetNextId()
         {
-            return _restaurantRepository.GetAll().Max(f => f.Id) + 1;
+            var allRestaurants = _restaurantRepository.GetAll();
+
+            if (allRestaurants.Count <= 0)
+                return 1;
+
+            return allRestaurants.Max(f => f.Id) + 1;
         }
     }
 }

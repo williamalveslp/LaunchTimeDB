@@ -54,7 +54,12 @@ namespace LaunchTimeDB.Domain.Services.Services
 
         public long GetNextId()
         {
-            return _facilitatorRepository.GetAll().Max(f => f.Id) + 1;
+            var allFacilitators = _facilitatorRepository.GetAll();
+
+            if (allFacilitators.Count <= 0)
+                return 1;
+
+            return allFacilitators.Max(f => f.Id) + 1;
         }
     }
 }

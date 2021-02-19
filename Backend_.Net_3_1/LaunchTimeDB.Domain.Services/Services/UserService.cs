@@ -82,7 +82,7 @@ namespace LaunchTimeDB.Domain.Services.Services
                 hasSameName = allUsers.Where(f => f.Name.ToLower() == name.ToLower()).FirstOrDefault();
             else
                 hasSameName = allUsers.Where(f => (f.Id != id) && (f.Name.ToLower() == name.ToLower())).FirstOrDefault();
-           
+
             if (hasSameName != null)
                 messageErrors += $"Nome de Usuário '{name}' já existe.\r\n";
 
@@ -94,7 +94,12 @@ namespace LaunchTimeDB.Domain.Services.Services
 
         public long GetNextId()
         {
-            return _userRepository.GetAll().Max(f => f.Id) + 1;
+            var allUsers = _userRepository.GetAll();
+
+            if (allUsers.Count <= 0)
+                return 1;
+
+            return allUsers.Max(f => f.Id) + 1;
         }
     }
 }

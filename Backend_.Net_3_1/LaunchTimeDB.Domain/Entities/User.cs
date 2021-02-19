@@ -8,6 +8,8 @@ namespace LaunchTimeDB.Domain.Entities
         public virtual string Password { get; private set; }
         public virtual string Name { get; private set; }
 
+        protected User() : base() { }
+
         public User(string userName, string password, string name)
         {
             this.UserName = userName;

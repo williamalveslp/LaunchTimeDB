@@ -88,9 +88,15 @@ C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\ne
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.AssemblyInfoInputs.cache
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.AssemblyInfo.cs
-C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.csproj.CoreCompileInputs.cache
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.csproj.CopyComplete
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.dll
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.pdb
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.genruntimeconfig.cache
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.csprojAssemblyReference.cache
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.dll
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.Services.dll
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.Services.pdb
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\netcoreapp3.1\LaunchTimeDB.Domain.pdb
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.xUnit.Tests\obj\Debug\netcoreapp3.1\LaunchTimeDB.xUnit.Tests.csproj.CoreCompileInputs.cache
