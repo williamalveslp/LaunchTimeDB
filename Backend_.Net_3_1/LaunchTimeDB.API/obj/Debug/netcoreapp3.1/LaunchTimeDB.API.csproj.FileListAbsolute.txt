@@ -76,7 +76,6 @@ C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp3.1\LaunchTimeDB.API.runtimeconfig.dev.json
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp3.1\LaunchTimeDB.API.dll
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp3.1\LaunchTimeDB.API.pdb
-C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp3.1\LaunchTimeDB.API.xml
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
