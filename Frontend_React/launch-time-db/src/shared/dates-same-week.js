@@ -1,52 +1,18 @@
+// It's using: npm install compare-week.
 const compareWeek = require('compare-week');
 
-
-
-function getMinAndMax(dates) {
-    var result = {};
-    for (var index in dates) {
-        var thisDate = dates[index]
-            , dateParts = thisDate.split(/\//)
-            , fullDate = new Date(dateParts[2], dateParts[0] - 1, dateParts[1]);
-        if (!result['max'] || fullDate > result['max']) {
-            result['max'] = fullDate;
-        }
-        if (!result['min'] || fullDate < result['min']) {
-            result['min'] = fullDate
-        }
-    }
-    return result;
-}
-function isSameWeek(datesArray, newDate) {
-
-    debugger;
+function isSameWeek(datesArray, dateToCompare) {
     for (var i = 0; i < datesArray.length; i++) {
-        debugger;
-        const dateItem = stringToDate(datesArray[i], 'dd/MM/yyyy', "/");
-        let newDateDate = stringToDate(newDate[i], 'dd/MM/yyyy', "/");
+        const dateItemAsDate = stringToDate(datesArray[i].date, 'dd/MM/yyyy', "/");
+        const dateToCompareAsDate = stringToDate(dateToCompare, 'dd/MM/yyyy', "/");
 
-        const isSameWeek = compareWeek(dateItem, newDateDate);
+        const isSameWeek = compareWeek(dateItemAsDate, dateToCompareAsDate);
 
         if (isSameWeek)
             return true;
     }
     return false;
-
-    /* debugger;
- 
-     var minAndMax = getMinAndMax(dates)
-         , dayOfWeek = {}
-     dayOfWeek['min'] = minAndMax['min'].getDay();
-     dayOfWeek['max'] = minAndMax['max'].getDay();
-     debugger;
-     
-     if (minAndMax['max'] - minAndMax['min'] > 518400000 || dayOfWeek['min'] > dayOfWeek['max']) {
-         return false;
-     }
-     return true; */
 }
-
-
 
 function stringToDate(_date, _format, _delimiter) {
     // Samples to call this funcion.

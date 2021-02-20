@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import SelectCustom from '../../../../components/select-custom';
@@ -25,27 +25,37 @@ const FacilitatorCalendarPage = (props) => {
         const restaurantSelected = getRestaurantById(restaurant);
         const userSelected = getUserById(user);
 
-        const message = `Tem certeza que deseja Agendar o restaurante "${restaurantSelected.label}" na data "${date}"?`;
+        const message = `Tem certeza que deseja Votar no restaurante "${restaurantSelected.label}" na data "${date}"?`;
         const response = window.confirm(message);
         if (!response)
             return;
 
-      /*  const onlyDatesVoted = schedules.map(({ date }) => ({ date }));
-        const isDatesFromSameWeek = validateIfSameWeek(onlyDatesVoted, date);
-
-        if (isDatesFromSameWeek) {
-            alert('Não é permitido mais de um voto na mesma semana.');
-            return;
-        }*/
-
+        // *********  Validation Vote on same day ************
         const currentDate = generateCurrentDate();
-    /*    debugger;
         const votedOnSameDay = hasVotedOnSameDay(userSelected.key, currentDate);
-        debugger;
         if (votedOnSameDay) {
             alert('Não é permitido o mesmo usuário votar mais de uma vez por dia.');
             return;
-        }*/
+        }
+
+        // *********  Validation Restaurant voted on same Week ************
+        var sameRestaurantFound = false;
+        for (var i = 0; i < schedules.length; i++) {
+            if (schedules[i].restaurantName == restaurantSelected.label) {
+                sameRestaurantFound = true;
+                break;
+            }
+        }
+        if (sameRestaurantFound) {
+
+            const onlyDatesVoted = schedules.map(({ date }) => ({ date }));
+            const isDatesFromSameWeek = validateIfSameWeek(onlyDatesVoted, date);
+
+            if (isDatesFromSameWeek) {
+                alert('Não é permitido mais de um voto na mesma semana.');
+                return;
+            }
+        }
 
         let newSchedule = schedules;
 
@@ -65,8 +75,6 @@ const FacilitatorCalendarPage = (props) => {
     }
 
     const validateIfSameWeek = (onlyDatesVoted, dateInformed) => {
-        debugger;
-
         const isDatesFromSameWeek = isSameWeek(onlyDatesVoted, dateInformed);
         return isDatesFromSameWeek;
     }
@@ -170,7 +178,7 @@ const FacilitatorCalendarPage = (props) => {
                                     <tr>
                                         <th>Desenvolvedor</th>
                                         <th>Restaurante</th>
-                                        <th>Data ↓</th>
+                                        <th>Data</th>
                                         <th>Ação</th>
                                     </tr>
                                 </thead>
