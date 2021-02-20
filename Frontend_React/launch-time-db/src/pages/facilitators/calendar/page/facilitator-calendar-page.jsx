@@ -74,7 +74,6 @@ const FacilitatorCalendarPage = (props) => {
 
         alert('Salvo com sucesso!');
 
-        debugger;
         if (date === currentDate) {
             setRestaurantForToday({ userName: userSelected.label, restaurantName: restaurantSelected.label });
         }
@@ -100,6 +99,12 @@ const FacilitatorCalendarPage = (props) => {
     }
 
     const deleteSchedule = (userName, restaurantName, date) => {
+        const currentDate = generateCurrentDate();
+
+        if (currentDate === date) {
+            alert('Não é permitido excluir um Restaurante já votado para hoje.');
+            return;
+        }
 
         const message = `Tem certeza que deseja Excluir o voto no "${restaurantName}" em"${date}"?`;
         const response = window.confirm(message);
@@ -245,7 +250,7 @@ const FacilitatorCalendarPage = (props) => {
                                     <tr>
                                         <td>{restaurantForToday.userName}</td>
                                         <td>{restaurantForToday.restaurantName}</td>
-                                        <td><b style={{color: 'blue'}}>Hoje</b></td>
+                                        <td><b style={{ color: 'blue' }}>Hoje</b></td>
                                     </tr>
                                 </tbody>
                             </Table>
