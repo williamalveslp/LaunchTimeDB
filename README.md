@@ -1,4 +1,4 @@
-# LaunchTimeDB (Desafio DBServer)
+# LaunchTimeDB
 
 No desafio, foi basicamente implementado através de 2 aplicações.
 
