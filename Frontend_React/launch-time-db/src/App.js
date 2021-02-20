@@ -1,12 +1,8 @@
 import React from 'react';
-// MDBReact and Bootstrap
 import '@fortawesome/fontawesome-free/css/all.min.css';
-//import 'bootstrap-css-only/css/bootstrap.min.css';
-//import 'mdbreact/dist/css/mdb.css';
 
-// Navbar and Footer
+// Navbar
 import { NavbarCustom, NavbarColor } from './components/navbar';
-import { Footer, FooterColor } from './components/footer';
 
 import AppHeaderLinks from './App-headers-links';
 import './App.css';
@@ -24,8 +20,6 @@ function App() {
       <div className='containerBody'>
         <Router />
       </div>
-
-    {/*   <Footer backgroundColor={FooterColor.BLUE} /> */}
     </div>
   );
 }

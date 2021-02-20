@@ -2,6 +2,7 @@
 using LaunchTimeDB.Application.AppInterfaces;
 using LaunchTimeDB.Application.InputModels.Users;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace LaunchTimeDB.API.Controllers
 {
@@ -24,7 +25,14 @@ namespace LaunchTimeDB.API.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] UserInputModel inputModel)
         {
-            return ResponseOk(_userAppService.Insert(inputModel));
+            try
+            {
+                return ResponseOk(_userAppService.Insert(inputModel));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         /// <summary>
@@ -36,7 +44,14 @@ namespace LaunchTimeDB.API.Controllers
         [Route("SignIn")]
         public IActionResult SignIn([FromBody] UserInputModel inputModel)
         {
-            return ResponseOk(_userAppService.GetLogin(inputModel.UserName, inputModel.Password));
+            try
+            {
+                return ResponseOk(_userAppService.GetLogin(inputModel.UserName, inputModel.Password));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         /// <summary>
@@ -47,7 +62,14 @@ namespace LaunchTimeDB.API.Controllers
         [HttpPut]
         public IActionResult Put([FromBody] UserInputModel inputModel)
         {
-            return ResponseOk(_userAppService.Update(inputModel));
+            try
+            {
+                return ResponseOk(_userAppService.Update(inputModel));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         /// <summary>
@@ -81,8 +103,15 @@ namespace LaunchTimeDB.API.Controllers
         [Route("{id}")]
         public IActionResult Delete(int id)
         {
-            _userAppService.Delete(id);
-            return ResponseOk(_userAppService.GetAll());
+            try
+            {
+                _userAppService.Delete(id);
+                return ResponseOk(_userAppService.GetAll());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

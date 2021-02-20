@@ -30,7 +30,8 @@ namespace LaunchTimeDB.Application.AppServices
                 throw new Exception("Id não enviado.");
 
             var restaurant = _restaurantService.GetById((long)inputModel.Id);
-            if (restaurant == null) return null;
+            if (restaurant == null)
+                throw new Exception("Restaurante não encontrado.");
 
             restaurant.Update(inputModel.Name);
             restaurant = _restaurantService.Update(restaurant);

@@ -5,7 +5,6 @@ const RoutePaths = {
     FACILITATORS_SCHEDULES_PAGE: '/Facilitador/Agenda/',
     // Restaurants
     RESTAURANTS_PAGE: '/Restaurantes/Listagem/'
-
 };
 
 const RouteItems = {

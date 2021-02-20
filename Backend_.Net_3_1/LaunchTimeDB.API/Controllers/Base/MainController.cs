@@ -20,14 +20,7 @@ namespace LaunchTimeDB.API.Controllers.Base
         protected IActionResult ResponseOk<T>(T entity)
         {
             // TODO: Remove this try catch and replace to Notification Pattern.
-            try
-            {
-                return Ok(new ResponseData<T>(entity));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new ErrorResponse(ex.Message, HttpStatusCode.BadRequest));
-            }
+            return Ok(new ResponseData<T>(entity));
         }
 
         /// <summary>
@@ -43,6 +36,11 @@ namespace LaunchTimeDB.API.Controllers.Base
 
             ErrorResponse viewModel = new ErrorResponse(ex.Message, HttpStatusCode.BadRequest);
             return BadRequest(viewModel);
+        }
+
+        protected IActionResult BadRequest(Exception ex)
+        {
+            return BadRequest(new ErrorResponse(ex.Message, HttpStatusCode.BadRequest));
         }
 
         private void LogError<T>(ILogger<T> logger, Exception ex)

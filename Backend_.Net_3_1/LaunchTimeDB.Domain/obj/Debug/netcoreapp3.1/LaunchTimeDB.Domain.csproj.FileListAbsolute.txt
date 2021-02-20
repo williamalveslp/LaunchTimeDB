@@ -15,4 +15,3 @@ C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcore
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.csproj.CoreCompileInputs.cache
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.dll
 C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.pdb
-C:\Git_Repos\LaunchTimeDB\Backend_.Net_3_1\LaunchTimeDB.Domain\obj\Debug\netcoreapp3.1\LaunchTimeDB.Domain.csprojAssemblyReference.cache

@@ -30,7 +30,8 @@ namespace LaunchTimeDB.Application.AppServices
                 throw new Exception("Id não enviado.");
 
             var user = _userService.GetById((long)inputModel.Id);
-            if (user == null) return null;
+            if (user == null)
+                throw new Exception("Usuário não encontrado.");
 
             user.Update(inputModel.UserName, inputModel.Password, inputModel.Name);
             user = _userService.Update(user);

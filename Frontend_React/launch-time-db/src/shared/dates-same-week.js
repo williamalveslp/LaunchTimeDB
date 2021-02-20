@@ -32,6 +32,4 @@ function stringToDate(_date, _format, _delimiter) {
     return formatedDate;
 }
 
-
-
 export { isSameWeek };

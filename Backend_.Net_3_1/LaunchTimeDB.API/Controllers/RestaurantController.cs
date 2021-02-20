@@ -1,7 +1,10 @@
 ﻿using LaunchTimeDB.API.Controllers.Base;
 using LaunchTimeDB.Application.AppInterfaces;
 using LaunchTimeDB.Application.InputModels.Restaurants;
+using LaunchTimeDB.Application.Responses;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Net;
 
 namespace LaunchTimeDB.API.Controllers
 {
@@ -24,7 +27,14 @@ namespace LaunchTimeDB.API.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] RestaurantInputModel inputModel)
         {
-            return ResponseOk(_restaurantAppService.Insert(inputModel));
+            try
+            {
+                return ResponseOk(_restaurantAppService.Insert(inputModel));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ErrorResponse(ex.Message, HttpStatusCode.BadRequest));
+            }
         }
 
         /// <summary>
@@ -35,7 +45,14 @@ namespace LaunchTimeDB.API.Controllers
         [HttpPut]
         public IActionResult Put([FromBody] RestaurantInputModel inputModel)
         {
-            return ResponseOk(_restaurantAppService.Update(inputModel));
+            try
+            {
+                return ResponseOk(_restaurantAppService.Update(inputModel));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         /// <summary>
@@ -69,8 +86,15 @@ namespace LaunchTimeDB.API.Controllers
         [Route("{id}")]
         public IActionResult Delete(int id)
         {
-            _restaurantAppService.Delete(id);
-            return ResponseOk(_restaurantAppService.GetAll());
+            try
+            {
+                _restaurantAppService.Delete(id);
+                return ResponseOk(_restaurantAppService.GetAll());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

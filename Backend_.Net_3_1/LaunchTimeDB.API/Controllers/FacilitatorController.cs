@@ -2,6 +2,8 @@
 using LaunchTimeDB.Application.AppInterfaces;
 using LaunchTimeDB.Application.InputModels.Facilitators;
 using Microsoft.AspNetCore.Mvc;
+using System;
+
 
 namespace LaunchTimeDB.API.Controllers
 {
@@ -24,7 +26,14 @@ namespace LaunchTimeDB.API.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] FacilitatorInputModel inputModel)
         {
-            return ResponseOk(_facilitatorAppService.Insert(inputModel));
+            try
+            {
+                return ResponseOk(_facilitatorAppService.Insert(inputModel));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         /// <summary>
@@ -35,7 +44,14 @@ namespace LaunchTimeDB.API.Controllers
         [HttpPut]
         public IActionResult Put([FromBody] FacilitatorInputModel inputModel)
         {
-            return ResponseOk(_facilitatorAppService.Update(inputModel));
+            try
+            {
+                return ResponseOk(_facilitatorAppService.Update(inputModel));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         /// <summary>
@@ -69,8 +85,15 @@ namespace LaunchTimeDB.API.Controllers
         [Route("{id}")]
         public IActionResult Delete(int id)
         {
-            _facilitatorAppService.Delete(id);
-            return ResponseOk(_facilitatorAppService.GetAll());
+            try
+            {
+                _facilitatorAppService.Delete(id);
+                return ResponseOk(_facilitatorAppService.GetAll());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
