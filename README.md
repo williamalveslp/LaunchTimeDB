@@ -1,10 +1,13 @@
 # LaunchTimeDB (Desafio DBServer)
 
-## Stack Utilizada
-- Backend: .Net 3.1 (REST API, com Swagger)
-- Frontend: React 17.0
+No desafio, foi basicamente implementado através de 2 aplicações.
 
-Para executar os projetos, estão nas respectivas pastas:
+
+## Stack Utilizada
+- **Backend**: .Net 3.1 (REST API, DDD, Swagger, Cors, Injeção de Dependência e xUnit para Teste de Unidade)
+- **Frontend**: React 17.0 (com Componentes Funcionais/Function Components)
+
+Para executar cada projeto, estão em suas respectivas pastas:
 - Backend_.Net_3_1/
 - Frontend_React/
 
@@ -13,7 +16,7 @@ A única execução que se faz necessária antes de iniciar a aplicação, é no
 Para facilitar o uso da REST API, você pode Importar **collections de Postman** que também foram incluídas, estando no seguinte diretório também na raiz do repositório:
  - PostmanCollections/
  
-* Dica para importar no Postman: Import > File > Seleciona o arquivo "/PostmanCollections/LaunchTimeDB.postman_collection.json", e para as variáveis de ambiente, clique no botão "Manager Environment" (do lado do "olhinho"), clique em Import e selecione o arquivo: "/PostmanCollections/Environments/local.postman_environment.json".
+* Dica para importar no Postman: Import > File > Seleciona o arquivo **"/PostmanCollections/LaunchTimeDB.postman_collection.json"**, e para as variáveis de ambiente, clique no botão **"Manager Environment"** (do lado do "olhinho"), clique em **Import** e selecione o arquivo: **"/PostmanCollections/Environments/local.postman_environment.json"**.
 
 
 ### **Importante**
