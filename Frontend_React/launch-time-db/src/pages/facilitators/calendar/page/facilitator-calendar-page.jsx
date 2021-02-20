@@ -11,20 +11,20 @@ import PropTypes from 'prop-types';
 /*import { Formik } from 'formik';
 import FormikSchema from '../formik-schema/product-detail-formik'; */
 
-const FacilitatorPage = (props) => {
+const FacilitatorCalendarPage = (props) => {
 
     return (
         <>
-           <label>[FACILITATOR]</label>
+           <label>[FACILITATOR CALEDAR]</label>
         </>
     )
 }
 
-FacilitatorPage.defaultProps = {
+FacilitatorCalendarPage.defaultProps = {
 }
 
-FacilitatorPage.propTypes = {   
+FacilitatorCalendarPage.propTypes = {   
   
 }
 
-export default FacilitatorPage;
+export default FacilitatorCalendarPage;

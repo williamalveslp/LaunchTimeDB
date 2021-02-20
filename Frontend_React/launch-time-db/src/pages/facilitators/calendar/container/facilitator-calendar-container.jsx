@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import FacilitatorPage from '../page/facilitator-page';
+import FacilitatorCalendarPage from '../page/facilitator-calendar-page';
 
 const FacilitatorContainer = () => {
     return (
         <>
-            <FacilitatorPage />
+            <FacilitatorCalendarPage />
         </>
     );
 }

@@ -1,9 +1,11 @@
 const RoutePaths = {
     ROOT: '/',
     // Facilitators
-    FACILITATORS_PAGE: '/Facilitator/List/',
+    FACILITATORS_CALENDAR_PAGE: '/Facilitador/Calendario/',
+    FACILITATORS_SCHEDULES_PAGE: '/Facilitador/Agenda/',
     // Restaurants
-    RESTAURANTS_PAGE : '/Restaurant/List/'
+    RESTAURANTS_PAGE: '/Restaurantes/Listagem/'
+
 };
 
 const RouteItems = {
@@ -12,8 +14,12 @@ const RouteItems = {
         label: 'Home'
     },
     // Facilitators
-    FACILITATORS_PAGE: {
-        route: RoutePaths.FACILITATORS_PAGE,
+    FACILITATORS_CALENDAR_PAGE: {
+        route: RoutePaths.FACILITATORS_CALENDAR_PAGE,
+        label: 'Calendário'
+    },
+    FACILITATORS_SCHEDULES_PAGE:{
+        route: RoutePaths.FACILITATORS_SCHEDULES_PAGE,
         label: 'Agenda'
     },
     // Restaurants
