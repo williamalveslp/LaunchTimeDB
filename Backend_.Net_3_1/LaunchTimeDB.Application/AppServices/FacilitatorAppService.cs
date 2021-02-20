@@ -19,7 +19,7 @@ namespace LaunchTimeDB.Application.AppServices
 
         public FacilitatorDetailViewModel Insert(FacilitatorInputModel inputModel)
         {
-            var facilitator = new Facilitator(inputModel.RestaurantId, inputModel.LaunchDate);
+            var facilitator = new Facilitator(inputModel.RestaurantId, inputModel.LaunchDate, inputModel.UserId);
             facilitator = _facilitatorService.Insert(facilitator);
             return GetDetailViewModel(facilitator);
         }
@@ -32,7 +32,7 @@ namespace LaunchTimeDB.Application.AppServices
             var facilitator = _facilitatorService.GetById((long)inputModel.Id);
             if (facilitator == null) return null;
 
-            facilitator.Update(inputModel.RestaurantId, inputModel.LaunchDate);
+            facilitator.Update(inputModel.RestaurantId, inputModel.LaunchDate, inputModel.UserId);
             return GetDetailViewModel(facilitator);
         }
 
@@ -42,13 +42,13 @@ namespace LaunchTimeDB.Application.AppServices
             return GetListViewModel(allFacilitators);
         }
 
-        public FacilitatorDetailViewModel GetById(int id)
+        public FacilitatorDetailViewModel GetById(long id)
         {
             var facilitator = _facilitatorService.GetById(id);
             return GetDetailViewModel(facilitator);
         }
 
-        public void Delete(int id)
+        public void Delete(long id)
         {
             _facilitatorService.DeleteById(id);
         }

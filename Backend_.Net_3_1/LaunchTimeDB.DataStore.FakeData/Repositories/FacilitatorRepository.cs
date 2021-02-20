@@ -10,9 +10,9 @@ namespace LaunchTimeDB.DataStore.FakeData
     {
         private static IList<Facilitator> _facilitatorsDataList = new List<Facilitator>()
         {
-            new Facilitator(1, 3, DateTime.Now.AddDays(2)),
-            new Facilitator(2, 4, DateTime.Now.AddDays(4)),
-            new Facilitator(3, 5, DateTime.Now.AddDays(3))
+            new Facilitator(1, 3, DateTime.Now.AddDays(2), 4),
+            new Facilitator(2, 4, DateTime.Now.AddDays(4), 5),
+            new Facilitator(3, 5, DateTime.Now.AddDays(3), 6)
         };
 
         public Facilitator Insert(Facilitator entity)
@@ -28,7 +28,7 @@ namespace LaunchTimeDB.DataStore.FakeData
             {
                 if (item.Id == entity.Id)
                 {
-                    item.Update(entity.RestaurantId, entity.LaunchDate);
+                    item.Update(entity.RestaurantId, entity.LaunchDate, entity.UserId);
                     facilitator = item;
                     break;
                 }

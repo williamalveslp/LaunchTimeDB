@@ -3,7 +3,7 @@ import React from 'react';
 const HomePage = () => {
     return (
         <div>
-            PÁGINA HOME
+            Acesso a área de Calendário para realizar os agendamentos.
         </div>
     )
 }

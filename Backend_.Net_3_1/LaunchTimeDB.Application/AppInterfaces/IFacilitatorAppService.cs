@@ -6,7 +6,7 @@ namespace LaunchTimeDB.Application.AppInterfaces
 {
     public interface IFacilitatorAppService
     {
-        FacilitatorDetailViewModel GetById(int id);
+        FacilitatorDetailViewModel GetById(long id);
 
         FacilitatorListViewModel GetAll();
 
@@ -14,6 +14,6 @@ namespace LaunchTimeDB.Application.AppInterfaces
 
         FacilitatorDetailViewModel Update(FacilitatorInputModel inputModel);
 
-        void Delete(int id);
+        void Delete(long id);
     }
 }
