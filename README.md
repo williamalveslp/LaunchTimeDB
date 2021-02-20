@@ -11,7 +11,8 @@ Para executar cada projeto, estão em suas respectivas pastas:
 - Backend_.Net_3_1/
 - Frontend_React/
 
-A única execução que se faz necessária antes de iniciar a aplicação, é no projeto React/Frontend, que basta executar "npm install" e será baixado as dependências necessárias para execução.
+## Instruções
+A única ação necessária é no projeto React/Frontend, que basta executar "npm install" antes de executar aplicação, para ser baixado as dependências necessárias para execução.
 
 ## Collections de Postman
 Para facilitar o uso da REST API, você pode Importar **collections de Postman** que também foram incluídas, estando no seguinte diretório também na raiz do repositório:
