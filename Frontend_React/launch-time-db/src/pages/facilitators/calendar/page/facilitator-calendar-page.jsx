@@ -13,7 +13,8 @@ const FacilitatorCalendarPage = (props) => {
 
     const { user, setUser, users, restaurants, restaurant, setRestaurant,
         calendarDateSelected, setCalendarDateSelected, getRestaurantById,
-        schedules, setSchedules, getUserById, deleteScheduleByFilter, clearFields, hasVotedOnSameDay } = props;
+        schedules, setSchedules, getUserById, deleteScheduleByFilter, clearFields, hasVotedOnSameDay,
+        restaurantForToday, setRestaurantForToday } = props;
 
     const confirmToSave = () => {
         const date = calendarDateSelected.toLocaleDateString();
@@ -32,6 +33,7 @@ const FacilitatorCalendarPage = (props) => {
 
         // *********  Validation Vote on same day ************
         const currentDate = generateCurrentDate();
+
         const votedOnSameDay = hasVotedOnSameDay(userSelected.key, currentDate);
         if (votedOnSameDay) {
             alert('Não é permitido o mesmo usuário votar mais de uma vez por dia.');
@@ -69,7 +71,13 @@ const FacilitatorCalendarPage = (props) => {
         });
 
         setSchedules(newSchedule);
+
         alert('Salvo com sucesso!');
+
+        debugger;
+        if (date === currentDate) {
+            setRestaurantForToday({ userName: userSelected.label, restaurantName: restaurantSelected.label });
+        }
 
         clearFields();
     }
@@ -204,6 +212,45 @@ const FacilitatorCalendarPage = (props) => {
                             </Table>
                         </>
                     }
+                </Grid>
+                <Grid item xs={4}>
+                </Grid>
+            </Grid>
+
+            <br />
+            <hr />
+
+            <Grid container spacing={3}>
+                <Grid item xs={8}>
+                    <h4>Restaurante Votado para hoje</h4>
+
+                    {Object.keys(restaurantForToday).length == 0 && (
+                        <Alert variant={"warning"}>
+                            Não há Restaurante votado para hoje.
+                        </Alert>
+                    )}
+
+                    {Object.keys(restaurantForToday).length > 0 && (
+                        <>
+                            <br />
+                            <Table striped bordered hover>
+                                <thead>
+                                    <tr>
+                                        <th>Desenvolvedor</th>
+                                        <th>Restaurante</th>
+                                        <th>Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{restaurantForToday.userName}</td>
+                                        <td>{restaurantForToday.restaurantName}</td>
+                                        <td><b style={{color: 'blue'}}>Hoje</b></td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                        </>
+                    )}
                 </Grid>
                 <Grid item xs={4}>
                 </Grid>

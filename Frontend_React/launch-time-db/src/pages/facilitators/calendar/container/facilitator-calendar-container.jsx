@@ -5,7 +5,7 @@ import { loadRestaurants, loadUsers } from './functions/load-data';
 const FacilitatorContainer = () => {
     const [users, setUsers] = useState([]);
     const [restaurants, setRestaurants] = useState([]);
-
+    const [restaurantForToday, setRestaurantForToday] = useState({});
     const [user, setUser] = useState(0);
     const [restaurant, setRestaurant] = useState(0);
     const [calendarDateSelected, setCalendarDateSelected] = useState(new Date());
@@ -72,6 +72,8 @@ const FacilitatorContainer = () => {
                 setSchedules={setSchedules}
                 clearFields={() => clearFields()}
                 hasVotedOnSameDay={(userId, votedDate) => hasVotedOnSameDay(userId, votedDate)}
+                restaurantForToday={restaurantForToday}
+                setRestaurantForToday={setRestaurantForToday}
             />
         </>
     );
