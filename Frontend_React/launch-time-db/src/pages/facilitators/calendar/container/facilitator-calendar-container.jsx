@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState} from "react";
 import FacilitatorCalendarPage from '../page/facilitator-calendar-page';
 import { loadRestaurants, loadUsers } from './functions/load-data';
 
@@ -18,13 +18,11 @@ const FacilitatorContainer = () => {
     }, []);
 
     const getRestaurantById = (id) => {
-        const found = restaurants.find(f => f.key === id);
-        return found;
+        return restaurants.find(f => f.key === id);
     }
 
     const getUserById = (id) => {
-        const found = users.find(f => f.key === id);
-        return found;
+        return users.find(f => f.key === id);
     }
 
     const clearFields = () => {
@@ -49,7 +47,7 @@ const FacilitatorContainer = () => {
         const hasVotedSameDay = schedules.find(f => f.userId === userId
             && f.votedDate === votedDate);
 
-        return (hasVotedSameDay != undefined) && (hasVotedSameDay != null);
+        return (hasVotedSameDay !== undefined) && (hasVotedSameDay != null);
     }
 
     return (

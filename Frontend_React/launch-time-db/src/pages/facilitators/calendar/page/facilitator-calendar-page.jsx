@@ -122,7 +122,7 @@ const FacilitatorCalendarPage = (props) => {
 
     return (
         <>
-            <br />
+            <br/>
             <Grid container spacing={4}>
                 <Grid item xs={3}>
                     <SelectCustom
@@ -138,8 +138,8 @@ const FacilitatorCalendarPage = (props) => {
                 <Grid item xs={9}>
                 </Grid>
             </Grid>
-            <br />
-            <br />
+            <br/>
+            <br/>
             <h4>Dia para a escolha do restaurante</h4>
             <Grid container spacing={3}>
                 <Grid item xs={4}>
@@ -158,8 +158,8 @@ const FacilitatorCalendarPage = (props) => {
                         items={restaurants}
                         onChange={(e) => setRestaurant(e)}
                     />
-                    <br />
-                    <br />
+                    <br/>
+                    <br/>
                     <ButtonCustom
                         label={'Salvar'}
                         type={'button'}
@@ -171,65 +171,65 @@ const FacilitatorCalendarPage = (props) => {
                 </Grid>
             </Grid>
 
-            <br />
-            <hr />
+            <br/>
+            <hr/>
             <Grid container spacing={3}>
                 <Grid item xs={8}>
                     <h4>Votos</h4>
                     {schedules.length <= 0 &&
-                        <>
-                            <Alert variant={"warning"}>
-                                Não há votos no momento.
-                            </Alert>
-                        </>
+                    <>
+                        <Alert variant={"warning"}>
+                            Não há votos no momento.
+                        </Alert>
+                    </>
                     }
                     {schedules.length > 0 &&
-                        <>
-                            <br />
-                            <Table striped bordered hover>
-                                <thead>
-                                    <tr>
-                                        <th>Desenvolvedor</th>
-                                        <th>Restaurante</th>
-                                        <th>Data</th>
-                                        <th>Ação</th>
+                    <>
+                        <br/>
+                        <Table striped bordered hover>
+                            <thead>
+                            <tr>
+                                <th>Desenvolvedor</th>
+                                <th>Restaurante</th>
+                                <th>Data</th>
+                                <th>Ação</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {schedules.map((item, i) => {
+                                return (
+                                    <tr key={i}>
+                                        <td>{item.userName}</td>
+                                        <td>{item.restaurantName}</td>
+                                        <td>{item.date}</td>
+                                        <td>
+                                            <ButtonCustom
+                                                label={'Excluir'}
+                                                type={'button'}
+                                                color="secondary"
+                                                onClick={() => deleteSchedule(item.userName, item.restaurantName, item.date)}
+                                            />
+                                        </td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    {schedules.map((item, i) => {
-                                        return (
-                                            <tr key={i}>
-                                                <td>{item.userName}</td>
-                                                <td>{item.restaurantName}</td>
-                                                <td>{item.date}</td>
-                                                <td>
-                                                    <ButtonCustom
-                                                        label={'Excluir'}
-                                                        type={'button'}
-                                                        color="secondary"
-                                                        onClick={() => deleteSchedule(item.userName, item.restaurantName, item.date)}
-                                                    />
-                                                </td>
-                                            </tr>
-                                        )
-                                    })}
-                                </tbody>
-                            </Table>
-                        </>
+                                )
+                            })}
+                            </tbody>
+                        </Table>
+                    </>
                     }
                 </Grid>
                 <Grid item xs={4}>
                 </Grid>
             </Grid>
 
-            <br />
-            <hr />
+            <br/>
+            <hr/>
 
             <Grid container spacing={3}>
                 <Grid item xs={8}>
                     <h4>Restaurante Votado para hoje</h4>
 
-                    {Object.keys(restaurantForToday).length == 0 && (
+                    {Object.keys(restaurantForToday).length === 0 && (
                         <Alert variant={"warning"}>
                             Não há Restaurante votado para hoje.
                         </Alert>
@@ -237,21 +237,21 @@ const FacilitatorCalendarPage = (props) => {
 
                     {Object.keys(restaurantForToday).length > 0 && (
                         <>
-                            <br />
+                            <br/>
                             <Table striped bordered hover>
                                 <thead>
-                                    <tr>
-                                        <th>Desenvolvedor</th>
-                                        <th>Restaurante</th>
-                                        <th>Data</th>
-                                    </tr>
+                                <tr>
+                                    <th>Desenvolvedor</th>
+                                    <th>Restaurante</th>
+                                    <th>Data</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>{restaurantForToday.userName}</td>
-                                        <td>{restaurantForToday.restaurantName}</td>
-                                        <td><b style={{ color: 'blue' }}>Hoje</b></td>
-                                    </tr>
+                                <tr>
+                                    <td>{restaurantForToday.userName}</td>
+                                    <td>{restaurantForToday.restaurantName}</td>
+                                    <td><b style={{color: 'blue'}}>Hoje</b></td>
+                                </tr>
                                 </tbody>
                             </Table>
                         </>
@@ -261,7 +261,8 @@ const FacilitatorCalendarPage = (props) => {
                 </Grid>
             </Grid>
         </>
-    )
+
+    );
 }
 
 FacilitatorCalendarPage.defaultProps = {
